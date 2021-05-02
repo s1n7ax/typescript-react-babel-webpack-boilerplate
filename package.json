@@ -1,0 +1,34 @@
+{
+	"name": "typescript-react-babel-webpack-boilerplate",
+	"version": "1.0.0",
+	"main": "index.js",
+	"author": "s1n7ax <srineshnisala@gmail.com>",
+	"license": "MIT",
+	"private": true,
+	"scripts": {
+		"dev_env": "ENV=dev",
+		"prod_env": "ENV=prod",
+		"nodemon": "nodemon -e 'js,ts,jsx,tsx,css,html'",
+		"start": "yarn dev_env && yarn nodemon ./index.js",
+		"build": "babel src --out-dir dist --copy-files --extensions '.ts,.js,.jsx'"
+	},
+	"devDependencies": {
+		"@babel/cli": "^7.13.16",
+		"@babel/core": "*",
+		"@babel/preset-env": "*",
+		"@babel/preset-react": "*",
+		"@babel/preset-typescript": "*",
+		"@typescript-eslint/eslint-plugin": "*",
+		"@typescript-eslint/parser": "*",
+		"babel-loader": "*",
+		"eslint": "*",
+		"eslint-config-prettier": "*",
+		"eslint-plugin-react": "*",
+		"nodemon": "*",
+		"prettier": "*",
+		"typescript": "*"
+	},
+	"dependencies": {
+		"@babel/register": "*"
+	}
+}
